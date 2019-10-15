@@ -12,25 +12,25 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Add you bot's username (also to be used for log file names)
-$bot_username = 'username_bot'; // Without "@"
+$bot_username = 'adventurehadesbot'; // Without "@"
 
 try {
     $bot = new TelegramBot\TelegramBotManager\BotManager([
         // Add you bot's API key and name
-        'api_key'      => 'your:bot_api_key',
+        'api_key'      => '921851310:AAHGBNHdtGve5JlLWhkA1Wo2qTXHU6BcTKI',
         'bot_username' => $bot_username,
 
         // Secret key required to access the webhook
-        'secret'       => 'super_secret',
+        'secret'       => 'giba',
 
-        //'webhook'      => [
+        'webhook'      => [
         //    // When using webhook, this needs to be uncommented and defined
-        //    'url' => 'https://your-domain/path/to/manager.php',
+            'url' => 'https://adventurehadesbot.herokuapp.com/manager.php'
         //    // Use self-signed certificate
         //    'certificate' => __DIR__ . '/server.crt',
         //    // Limit maximum number of connections
         //    'max_connections' => 5,
-        //],
+        ],
 
         //'commands' => [
         //    // Define all paths for your custom commands
@@ -58,11 +58,11 @@ try {
         //],
 
         // Logging (Error, Debug and Raw Updates)
-        //'logging'  => [
-        //    'debug'  => __DIR__ . "/{$bot_username}_debug.log",
-        //    'error'  => __DIR__ . "/{$bot_username}_error.log",
-        //    'update' => __DIR__ . "/{$bot_username}_update.log",
-        //],
+        'logging'  => [
+           'debug'  => __DIR__ . "/{$bot_username}_debug.log",
+           'error'  => __DIR__ . "/{$bot_username}_error.log",
+           'update' => __DIR__ . "/{$bot_username}_update.log",
+        ],
 
         // Set custom Upload and Download paths
         //'paths'    => [

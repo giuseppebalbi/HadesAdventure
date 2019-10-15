@@ -12,8 +12,8 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Add you bot's API key and name
-$bot_api_key  = 'your:bot_api_key';
-$bot_username = 'username_bot';
+$bot_api_key  = '921851310:AAHGBNHdtGve5JlLWhkA1Wo2qTXHU6BcTKI';
+$bot_username = 'adventurehadesbot';
 
 // Define all IDs of admin users in this array (leave as empty array if not used)
 $admin_users = [

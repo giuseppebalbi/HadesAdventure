@@ -9,11 +9,11 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Add you bot's API key and name
-$bot_api_key  = 'your:bot_api_key';
-$bot_username = 'username_bot';
+$bot_api_key  = '921851310:AAHGBNHdtGve5JlLWhkA1Wo2qTXHU6BcTKI';
+$bot_username = 'adventurehadesbot';
 
 // Define the URL to your hook.php file
-$hook_url     = 'https://your-domain/path/to/hook.php';
+$hook_url     = 'https://adventurehadesbot.herokuapp.com/hook.php';
 
 try {
     // Create Telegram API object
